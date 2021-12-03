@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+}
+.grid-parent{
+  display: grid;
+  height: auto;
+  width: 90%;
+  margin-top: 5em;
+  margin-left: 0;
+  grid-gap: 2.5em;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: auto;/*rajoute automatiquement des lignes dans le grid.*/
+}
+.grid-enfant{
+  height: 100%;
+  width: 100%;
+}
+.card{
+  max-width : 345px;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.tallCard{
+  width:90%;
+  height: auto;
+}
+.tallCardFlex{
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width:900px){
+  .grid-parent{
+    grid-template-columns: auto;
+  }
+}
